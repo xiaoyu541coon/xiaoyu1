@@ -4,123 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>杨洋粉丝圈 - 羊毛聚集地</title>
-    <!-- 引入Bootstrap（简化布局） -->
+    <!-- 引入Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- 自定义样式 -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="杨洋粉丝圈" width="40" height="40" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">
+                <img src="images/杨洋头像.jpg" alt="杨洋头像" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 8px;">
                 杨洋粉丝圈
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/works.html">作品库</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/news.html">最新动态</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/gallery.html">美图视频</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/about.html">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">作品库</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">最新动态</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">美图视频</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">关于我们</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 轮播图 -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 70px;">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/banner1.jpg" class="d-block w-100" alt="杨洋海报1">
-            </div>
-            <div class="carousel-item">
-                <img src="images/banner2.jpg" class="d-block w-100" alt="杨洋海报2">
-            </div>
-            <div class="carousel-item">
-                <img src="images/banner3.jpg" class="d-block w-100" alt="杨洋海报3">
+    <!-- 头部海报 -->
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <img src="images/杨洋海报3.jpg" alt="杨洋海报" class="img-fluid rounded shadow">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
-    <!-- 杨洋简介 -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">✨ 杨洋 · 个人简介</h2>
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <img src="images/profile.jpg" class="img-fluid rounded" alt="杨洋头像">
+    <!-- 个人简介 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="text-primary">✨ 杨洋 · 个人简介</h2>
             </div>
-            <div class="col-md-8">
-                <p class="fs-5">杨洋，1991年9月9日出生于上海，中国内地影视男演员，毕业于中国人民解放军国防大学军事文化学院2003级舞蹈系。</p>
-                <p class="fs-5">2007年，因在李少红版《红楼梦》中饰演成年贾宝玉而踏入演艺圈；2015年，凭借《旋风少女》《微微一笑很倾城》等作品走红；代表作包括《特战荣耀》《你是我的荣耀》《且试天下》等。</p>
-                <p class="fs-5">✨ 核心标签：实力派演员 | 舞蹈功底深厚 | 正能量偶像</p>
+            <div class="col-md-3 text-center mb-3">
+                <img src="images/杨洋海报1.jpg" alt="杨洋海报" class="img-fluid rounded-circle shadow" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <div class="col-md-9">
+                <p class="lead">杨洋，1991年9月9日出生于上海，中国内地影视男演员，毕业于中国人民解放军国防大学军事文化学院2003级舞蹈系。</p>
+                <p class="lead">2007年，因在李少红版《红楼梦》中饰演成年贾宝玉而踏入演艺圈；2015年，凭借《旋风少女》《微微一笑很倾城》等作品走红；代表作包括《特战荣耀》《你是我的荣耀》《且试天下》等。</p>
+                <p class="lead text-danger">✨ 核心标签：实力派演员 | 舞蹈功底深厚 | 正能量偶像</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- 最新动态预览 -->
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">📢 最新动态</h2>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">2026.01.01 跨年晚会</h5>
-                            <p class="card-text">杨洋亮相2026跨年晚会，演唱《荣耀》经典曲目，舞台表现力拉满！</p>
-                            <a href="pages/news.html#news1" class="btn btn-outline-dark">查看详情</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">2025.12.20 新剧官宣</h5>
-                            <p class="card-text">杨洋新剧《XX》正式官宣，饰演XX角色，敬请期待！</p>
-                            <a href="pages/news.html#news2" class="btn btn-outline-dark">查看详情</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">2025.12.10 公益活动</h5>
-                            <p class="card-text">杨洋参与XX公益项目，助力乡村儿童教育事业。</p>
-                            <a href="pages/news.html#news3" class="btn btn-outline-dark">查看详情</a>
-                        </div>
+    <!-- 最新动态（替换后） -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="text-success">🎤 最新动态</h2>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card shadow">
+                    <img src="images/杨洋海报2.jpg" alt="《凡人修仙传》上映" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">2025.08 《凡人修仙传》上映</h5>
+                        <p class="card-text">杨洋主演的《凡人修仙传》正式上映，饰演韩立，还原经典修真角色，口碑热度双丰收！</p>
+                        <a href="#" class="btn btn-primary">查看详情</a>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 mb-3">
+                <div class="card shadow">
+                    <img src="images/杨洋海报1.jpg" alt="《雨霖铃》预告" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">2025.12 《雨霖铃》首支预告</h5>
+                        <p class="card-text">杨洋新剧《雨霖铃》首支预告释出，古装扮相惊艳，剧情质感拉满，引发全网期待！</p>
+                        <a href="#" class="btn btn-primary">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card shadow">
+                    <img src="images/杨洋头像.jpg" alt="2026年度展望" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">2026 与羊毛共赴新程</h5>
+                        <p class="card-text">新的一年，期待杨洋带来更多优质作品，也愿所有羊毛与他一起温暖同行、双向奔赴！</p>
+                        <a href="#" class="btn btn-primary">互动留言</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- 底部版权 -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>© 2026 杨洋粉丝圈 | 羊毛聚集地 【非官方，仅粉丝交流使用】</p>
-            <p>素材来源：公开网络（侵删） | 禁止商用</p>
-        </div>
-    </footer>
-
-    <!-- 引入JS -->
+    <!-- 引入Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
